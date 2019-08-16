@@ -1,0 +1,123 @@
+Body{
+    font-weight: 400;
+    
+}
+
+
+
+/*...........nav */
+
+.container {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+header {
+  background: #55d6aa; 
+  display: flex;
+}
+
+
+.logo {
+    float: left;
+    margin:0;
+    padding:0;
+    
+}
+
+nav {
+    float: right;
+   
+    
+}
+
+
+nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+nav li {
+    display:inline-block;
+    margin: 0 25px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+    
+}
+
+nav a::hover {
+    color: #000;
+}
+
+nav a::before {
+    content:"";
+    display:block;
+    height:5px;
+    width:100%;
+    background-color: #444;
+    
+    position: absolute;
+    top:0;
+    width: 0%;
+    
+    transition: all ease-in-out 250ms;
+    
+}
+
+nav a:hover::before {
+    width:100%;
+}
+    
+    
+    
+    
+    
+    
+
+/*........... End nav */
+
+
+
+
+/*...........callout image */
+
+.callout-container {
+
+    height: 100vh;
+
+    background: url("../images/hero_images/birdseye.jpg") no-repeat bottom right fixed;
+
+    -webkit-background-size: cover;
+
+    -moz-background-size: cover;
+
+    -o-background-size: cover;
+
+    background-size: cover;
+
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    position: relative;
+    /* NOT ABSOLUTE - look into the difference on absolute and relative parents
+    for a better understanding */
+}
+
+
+
+/*........... End callout image */
